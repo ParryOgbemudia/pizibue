@@ -26,4 +26,10 @@ body,
   /* Background images */
   --content-hero: url("/img/bg-hero.png");
   --content-services: url("/img/services.webp");
+
+  /* Breakpoints */
+  --breakpoint-xs: 350px;
+  --breakpoint-sm: 650px;
+  --breakpoint-md: 950px;
+  --breakpoint-lg: 1250px;
 }
