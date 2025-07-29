@@ -8,7 +8,7 @@ type ButtonProps = {
 
 export default function Button({ children, className, onClick }: ButtonProps) {
   const base =
-    "py-3.5 rounded-full text-white bg-primary leading-[1.2] flex items-center justify-center gap-2";
+    "py-3.5 rounded-full text-white bg-primary leading-[1.2] flex items-center justify-center gap-2 cursor-pointer";
 
   return (
     <button onClick={onClick} className={`${className} ${base} }`}>

@@ -5,35 +5,39 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 z-50 w-full bg-white">
       <nav className="mx-auto flex h-[100px] items-center justify-between max-sm:px-4 sm:px-10 md:px-14 lg:px-20">
-        <img src={logo} alt="PiziBue Logo" className="h-auto max-w-25" />
+        <img
+          src={logo}
+          alt="PiziBue Logo"
+          className="h-auto max-w-25 cursor-pointer"
+        />
         <ul className="flex list-none max-md:hidden">
-          <li>
+          <li className="cursor-pointer">
             <a
-              href="#about"
+              id="#about"
               className="hover:text-primary inline-block px-4 py-2.5 no-underline transition-colors"
             >
               About Us
             </a>
           </li>
-          <li>
+          <li className="cursor-pointer">
             <a
-              href="#services"
+              id="#services"
               className="hover:text-primary inline-block px-4 py-2.5 no-underline transition-colors"
             >
               Services
             </a>
           </li>
-          <li>
+          <li className="cursor-pointer">
             <a
-              href="/gallery"
+              id="/gallery"
               className="hover:text-primary inline-block px-4 py-2.5 no-underline transition-colors"
             >
               Gallery
             </a>
           </li>
-          <li>
+          <li className="cursor-pointer">
             <a
-              href="/contact-us"
+              id="/contact-us"
               className="hover:text-primary inline-block px-4 py-2.5 no-underline transition-colors"
             >
               Contact Us
