@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+html,
+body,
+#root {
+  min-height: 100vh;
+  width: 100%;
+  font-family: var(--font-inter);
+  line-height: 1.2;
+}
+
+@theme {
+  /* Colors */
+  --color-primary: #35b949;
+  --color-secondary: #020202;
+
+  /* Font Families */
+  --font-inter: "Inter", sans-serif;
+
+  /* Background images */
+  --content-hero: url("/img/bg-hero.png");
+  --content-services: url("/img/services.webp");
+
+  /* Breakpoints */
+  --breakpoint-xs: 350px;
+  --breakpoint-sm: 668px;
+  --breakpoint-md: 968px;
+  --breakpoint-lg: 1440px;
+}
