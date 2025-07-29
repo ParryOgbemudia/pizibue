@@ -1,5 +1,6 @@
 import logo from "@/assets/logo.svg";
 import Button from "../ui/Button";
+import menu from "@/assets/icons/menu.svg";
 
 export default function Navbar() {
   return (
@@ -47,6 +48,9 @@ export default function Navbar() {
         <Button className="flex items-center justify-center gap-2 px-4 py-2.5 text-[14px] max-md:hidden">
           Get in Touch
         </Button>
+        <div className="hidden items-center justify-center max-md:flex">
+          <img src={menu} alt="Menu Icon" className="" />
+        </div>
       </nav>
     </header>
   );
