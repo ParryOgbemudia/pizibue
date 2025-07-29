@@ -1,12 +1,15 @@
 import logo from "@/assets/logo.svg";
 import Button from "../ui/Button";
+import useMediaQuery from "../../hooks/useMediaQuery";
 
 export default function Navbar() {
+  const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
+
   return (
     <header className="fixed top-0 z-50 w-full bg-white">
-      <nav className="mx-auto flex h-[100px] max-w-[1440px] items-center justify-between px-20">
+      <nav className="mx-auto flex h-[100px] max-w-[1440px] items-center justify-between max-sm:px-4 sm:px-10 md:px-14 lg:px-20">
         <img src={logo} alt="PiziBue Logo" className="h-auto max-w-25" />
-        <ul className="flex list-none">
+        <ul className="flex list-none max-md:hidden">
           <li>
             <a
               href="#about"
@@ -40,7 +43,7 @@ export default function Navbar() {
             </a>
           </li>
         </ul>
-        <Button className="flex items-center justify-center gap-2 px-4 py-2.5 text-[14px]">
+        <Button className="flex items-center justify-center gap-2 px-4 py-2.5 text-[14px] max-md:hidden">
           Get in Touch
         </Button>
       </nav>
