@@ -5,7 +5,7 @@ import product_img4 from "@/assets/products/product-img4.webp";
 
 export default function Products() {
   return (
-    <section className="relative w-full">
+    <section className="relative w-full max-sm:mb-[56px]">
       <div className="z-0 aspect-[1440/697] w-full">
         {/* Top wave shape */}
         <svg
@@ -34,8 +34,8 @@ export default function Products() {
       </div>
 
       {/* Product Images */}
-      <div className="absolute top-1/2 z-10 w-full bg-[#020202] px-[80px] max-md:px-4 max-sm:top-[300px]">
-        <div className="grid grid-cols-[repeat(auto-fit,_minmax(302px,_1fr))] justify-items-center gap-6">
+      <div className="top-1/2 z-10 mt-[-120px] w-full bg-[#020202] px-[80px] max-md:px-4 max-sm:top-[300px] max-sm:pt-10 max-sm:pb-[56px]">
+        <div className="grid grid-cols-[repeat(auto-fit,_minmax(302px,_1fr))] justify-items-center gap-6 text-center">
           <div className="flex h-auto flex-col items-center justify-center gap-4 rounded-3xl bg-[#E9EEEA] p-6">
             <div className="">
               <img
