@@ -5,7 +5,7 @@ import menu from "@/assets/icons/menu.svg";
 export default function Navbar() {
   return (
     <header className="fixed top-0 z-50 w-full bg-white">
-      <nav className="mx-auto flex h-[100px] items-center justify-between max-md:h-auto max-md:px-4 max-md:py-4 sm:px-10 md:px-14 lg:px-20">
+      <nav className="mx-auto flex h-[100px] items-center justify-between max-md:h-auto max-md:px-4 max-md:py-4 md:px-14 lg:px-20">
         <img
           src={logo}
           alt="PiziBue Logo"
@@ -14,7 +14,7 @@ export default function Navbar() {
         <ul className="flex list-none max-md:hidden">
           <li className="cursor-pointer">
             <a
-              id="#about"
+              href="/about"
               className="hover:text-primary inline-block px-4 py-2.5 no-underline transition-colors"
             >
               About Us
@@ -22,7 +22,7 @@ export default function Navbar() {
           </li>
           <li className="cursor-pointer">
             <a
-              id="#services"
+              href="/services"
               className="hover:text-primary inline-block px-4 py-2.5 no-underline transition-colors"
             >
               Services
@@ -30,7 +30,7 @@ export default function Navbar() {
           </li>
           <li className="cursor-pointer">
             <a
-              id="/gallery"
+              href="/gallery"
               className="hover:text-primary inline-block px-4 py-2.5 no-underline transition-colors"
             >
               Gallery
@@ -38,7 +38,7 @@ export default function Navbar() {
           </li>
           <li className="cursor-pointer">
             <a
-              id="/contact-us"
+              href="/contact-us"
               className="hover:text-primary inline-block px-4 py-2.5 no-underline transition-colors"
             >
               Contact Us

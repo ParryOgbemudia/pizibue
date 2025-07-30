@@ -31,5 +31,6 @@ body,
   --breakpoint-xs: 350px;
   --breakpoint-sm: 650px;
   --breakpoint-md: 950px;
-  --breakpoint-lg: 1250px;
+  --breakpoint-xmd: 1250px;
+  --breakpoint-lg: 1400px;
 }

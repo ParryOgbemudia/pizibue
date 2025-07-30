@@ -1,0 +1,19 @@
+export default function About() {
+  return (
+    <section className="" id="#about">
+      <div className="relative hidden w-full">
+        <svg
+          className="h-auto w-full"
+          viewBox="0 0 1440 333"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 -707.373H1440V332.627C955.5 54.1274 616 -5.37256 0 332.627V-707.373Z"
+            fill="#020202"
+          />
+        </svg>
+      </div>
+    </section>
+  );
+}
