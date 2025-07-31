@@ -23,14 +23,12 @@ body,
   /* Font Families */
   --font-inter: "Inter", sans-serif;
 
-  /* Background images */
-  --content-hero: url("/img/bg-hero.png");
-  --content-services: url("/img/services.webp");
-
   /* Breakpoints */
   --breakpoint-xs: 350px;
-  --breakpoint-sm: 661px;
-  --breakpoint-md: 950px;
-  --breakpoint-xmd: 1270px;
-  --breakpoint-lg: 1400px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-xmd: 1170px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
 }
