@@ -5,23 +5,23 @@ import product_img4 from "@/assets/products/product-img4.webp";
 
 export default function Products() {
   return (
-    <section className="w-full">
-      <div className="relative mx-auto h-full max-w-[1440px]">
+    <section className="relative w-full">
+      <div className="mx-auto h-full max-w-[1440px]">
         {/* Product Text */}
         <div className="absolute top-[64px] left-1/2 -translate-x-1/2 text-center">
-          <h1 className="max-xmd:text-[32px] text-[40px] font-black max-md:text-xl max-sm:text-[32px] max-sm:font-black">
+          <h1 className="max-w-[483px] text-[40px] font-black max-md:w-[343px] max-md:text-[32px]">
             Why Choose <span className="text-primary">Pizibue</span>
             <br />
             Farm Products?
           </h1>
-          <p className="max-xmd:text-[14px] font-normal text-[#848D84] max-md:text-[10px] max-sm:text-[14px] max-sm:font-normal">
+          <p className="text-[14px] font-normal text-[#848D84]">
             Our commitment to excellence in every aspect
           </p>
         </div>
         {/* Curve svg */}
-        <div className="z-1 aspect-[1440/697] bg-[url(/img/topshape.svg)] bg-cover bg-center bg-no-repeat">
+        <div className="aspect-[1440/697] bg-[url(/img/topshape.svg)] bg-cover bg-center bg-no-repeat">
           <div className="mx-auto max-w-[1440px]">
-            <div className="w-full px-[80px] pt-[314px] max-sm:px-4 sm:px-10 md:px-16 lg:px-20">
+            <div className="w-full px-[80px] pt-[314px] max-xl:pt-[350px] max-sm:px-4 sm:px-10 md:px-16 lg:px-20">
               <div className="grid grid-cols-[repeat(auto-fit,_minmax(302px,_1fr))] gap-6">
                 {[
                   {

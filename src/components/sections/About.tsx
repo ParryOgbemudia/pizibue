@@ -5,8 +5,8 @@ export default function About() {
   return (
     <section className="w-full" id="about">
       <div className="mx-auto max-w-[1440px] bg-[#020202] px-[80px] py-[96px] max-sm:px-4 sm:px-10 md:px-16 lg:px-20">
-        <div className="flex justify-between gap-6 max-md:flex-col">
-          <div className="flex w-full max-w-[588px] flex-col items-center gap-8">
+        <div className="flex w-full justify-between gap-6 max-md:flex-col">
+          <div className="flex w-full flex-col items-center gap-8 md:max-w-[588px]">
             <div className="flex flex-col gap-10">
               <div className="space-y-6">
                 <h2 className="text-[40px] font-black text-white max-md:text-[32px]">
@@ -38,7 +38,7 @@ export default function About() {
           </div>
 
           {/* Card */}
-          <div className="w-full max-w-[628px]">
+          <div className="w-full md:max-w-[628px]">
             <div className="flex-col gap-8 max-md:flex md:grid md:grid-cols-2">
               {[
                 { value: "5+", label: "Years Experience" },
@@ -63,7 +63,7 @@ export default function About() {
         </div>
 
         {/* Svg bottom curve */}
-        <div className="w-full bg-amber-600">
+        <div className="w-full bg-white">
           <div className="max-w-[1440px]">
             <div className="z-1 aspect-[1440/697] h-full w-full bg-[url(/img/bottomshape.svg)] bg-cover bg-center bg-no-repeat"></div>
           </div>
