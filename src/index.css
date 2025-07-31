@@ -29,8 +29,8 @@ body,
 
   /* Breakpoints */
   --breakpoint-xs: 350px;
-  --breakpoint-sm: 650px;
+  --breakpoint-sm: 661px;
   --breakpoint-md: 950px;
-  --breakpoint-xmd: 1250px;
+  --breakpoint-xmd: 1270px;
   --breakpoint-lg: 1400px;
 }

@@ -13,3 +13,5 @@ export default function Home() {
     </div>
   );
 }
+
+//  <div className=" w-full bg-[#020202] px-[80px] max-md:mt-[-120px] max-md:px-4 max-sm:top-[300px] max-sm:pt-10 max-sm:pb-[56px] md:mt-[-260px]"></div>

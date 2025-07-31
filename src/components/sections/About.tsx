@@ -7,8 +7,8 @@ export default function About() {
       className="w-full bg-[#020202] px-[80px] py-[96px] max-md:px-4 max-md:py-14"
       id="#about"
     >
-      <div className="mx-auto flex flex-col gap-6">
-        <div className="flex flex-col gap-8">
+      <div className="mx-auto grid items-stretch gap-6 md:grid md:grid-cols-20">
+        <div className="h-full gap-8 md:col-span-8 md:grid md:grid-rows-2">
           <div className="flex flex-col justify-center gap-10">
             <div className="space-y-6">
               <h2 className="font-black text-white max-sm:text-[32px]">
@@ -30,7 +30,7 @@ export default function About() {
               Get in Touch
             </Button>
           </div>
-          <div className="max-sm:min-w:[343px] max-sm:min-h-[259px]">
+          <div className="max-sm:min-w:[343px]">
             <img
               src={about_img}
               alt="About Us"
@@ -40,28 +40,26 @@ export default function About() {
         </div>
 
         {/* Card */}
-        <div className="max-sm-grid-cols-1 w-full max-sm:grid max-sm:max-h-[587px] max-sm:px-4 max-sm:pt-8 max-sm:pb-14">
-          <div className="flex flex-col gap-6">
-            <div className="space-y-6">
-              <div className="flex flex-col items-center justify-center gap-4 rounded-2xl bg-[#E9EEEA] py-[56px]">
-                <p className="text-primary text-[40px] font-black">5+</p>
-                <p className="font-normal text-[#848D84]">Years Experience</p>
+        <div className="w-full max-sm:grid max-sm:pt-8 max-sm:pb-14 md:col-span-12">
+          <div className="flex flex-col items-stretch gap-8 md:grid md:grid-cols-2">
+            {[
+              { value: "5+", label: "Years Experience" },
+              { value: "50k", label: "Fish Annually" },
+              { value: "500+", label: "Happy Customers" },
+              { value: "21", label: "Production Ponds" },
+            ].map((item, idx) => (
+              <div
+                key={idx}
+                className="flex w-full flex-col items-center justify-center gap-6 rounded-3xl bg-[#E9EEEA] py-[56px] md:py-[90px]"
+              >
+                <p className="text-primary text-[40px] font-black">
+                  {item.value}
+                </p>
+                <p className="text-center font-normal text-[#848D84]">
+                  {item.label}
+                </p>
               </div>
-              <div className="flex flex-col items-center justify-center gap-4 rounded-2xl bg-[#E9EEEA] py-[56px]">
-                <p className="text-primary text-[40px] font-black">50k</p>
-                <p className="font-normal text-[#848D84]">Fish Annually</p>
-              </div>
-            </div>
-            <div className="space-y-6">
-              <div className="flex flex-col items-center justify-center gap-4 rounded-2xl bg-[#E9EEEA] py-[56px]">
-                <p className="text-primary text-[40px] font-black">500+</p>
-                <p className="font-normal text-[#848D84]">Happy Customers</p>
-              </div>
-              <div className="flex flex-col items-center justify-center gap-4 rounded-2xl bg-[#E9EEEA] py-[56px]">
-                <p className="text-primary text-[40px] font-black">21</p>
-                <p className="font-normal text-[#848D84]">Production Ponds</p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
@@ -82,4 +80,35 @@ export default function About() {
       </div>
     </section>
   );
+}
+
+{
+  /* <div className="h-full grid-cols-2 gap-6 md:row-start-1 md:row-end-4 md:grid">
+              <div className="flex flex-col items-center justify-center gap-4 rounded-2xl bg-[#E9EEEA]">
+                <h4 className="text-primary text-[40px] font-black">5+</h4>
+                <p className="text-[16px] font-normal text-[#848D84]">
+                  Years Experience
+                </p>
+              </div>
+              <div className="flex flex-col items-center justify-center gap-4 rounded-2xl bg-[#E9EEEA]">
+                <h4 className="text-primary text-[40px] font-black">50k</h4>
+                <p className="text-[16px] font-normal text-[#848D84]">
+                  Fish Annually
+                </p>
+              </div>
+            </div>
+            <div className="grid-cols-2 gap-6 md:row-start-5 md:row-end-8 md:grid">
+              <div className="flex flex-col items-center justify-center gap-4 rounded-2xl bg-[#E9EEEA]">
+                <h4 className="text-primary text-[40px] font-black">500+</h4>
+                <p className="text-[16px] font-normal text-[#848D84]">
+                  Happy Customers
+                </p>
+              </div>
+              <div className="flex flex-col items-center justify-center gap-4 rounded-2xl bg-[#E9EEEA]">
+                <h4 className="text-primary text-[40px] font-black">21</h4>
+                <p className="text-[16px] font-normal text-[#848D84]">
+                  Production Ponds
+                </p>
+              </div>
+            </div> */
 }
