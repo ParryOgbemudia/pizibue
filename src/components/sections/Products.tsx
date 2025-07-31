@@ -27,7 +27,7 @@ export default function Products() {
                   {
                     name: "Sustainable Farming",
                     label:
-                      " Eco-friendly practices that protect our environment whileproducing the highest quality catfish",
+                      " Eco-friendly practices that protect our environment while producing the highest quality catfish",
                     img: product_img1,
                     altText: "product_img1",
                   },

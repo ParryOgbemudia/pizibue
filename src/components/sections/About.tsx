@@ -61,11 +61,12 @@ export default function About() {
             </div>
           </div>
         </div>
-
-        {/* Svg bottom curve */}
-        <div className="w-full bg-white">
-          <div className="max-w-[1440px]">
-            <div className="z-1 aspect-[1440/697] h-full w-full bg-[url(/img/bottomshape.svg)] bg-cover bg-center bg-no-repeat"></div>
+      </div>
+      {/* Svg bottom curve */}
+      <div className="w-full">
+        <div className="mx-auto h-full w-full max-w-[1440px] bg-white">
+          <div className="aspect-[1440/697] bg-[url(/img/bottomshape.svg)] bg-cover bg-center bg-no-repeat">
+            <div className="px-[80px]"></div>
           </div>
         </div>
       </div>
