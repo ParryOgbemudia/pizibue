@@ -3,6 +3,7 @@ import About from "../components/sections/About";
 import Hero from "../components/sections/Hero";
 import Products from "../components/sections/Products";
 import Services from "../components/sections/Services";
+import Gallery from "./Gallery";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Products />
       <About />
       <Services />
+      <Gallery />
     </div>
   );
 }
