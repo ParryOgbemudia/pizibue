@@ -24,7 +24,7 @@ export default function About() {
                   quality, and environmental responsibility.
                 </p>
               </div>
-              <Button className="flex w-max items-center gap-2 px-4 py-2.5 text-[14px]">
+              <Button className="flex items-center gap-2 px-4 py-2.5 text-[14px] md:w-max">
                 Get in Touch
               </Button>
             </div>
