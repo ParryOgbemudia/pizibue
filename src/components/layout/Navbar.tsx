@@ -65,7 +65,7 @@ export default function Navbar() {
           </button>
         </div>
         {isMobileMenuOpen && (
-          <div className="fixed top-[100px] left-0 z-40 flex h-[calc(100%-100px)] w-full flex-col justify-between bg-white px-6 pt-4 pb-[64.37px] text-xs font-medium text-[#000000] md:hidden">
+          <div className="fixed top-[100px] left-0 z-40 flex h-[calc(100vh-100px)] w-full flex-col justify-between bg-white px-6 pt-4 pb-[64.37px] text-xs font-medium text-[#000000] md:hidden">
             <ul className={`flex h-full flex-col gap-4`}>
               <li className="">
                 <a href="/about" className="hover:text-primary py-4">
