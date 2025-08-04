@@ -4,7 +4,7 @@ import emekaimage1 from "@/assets/testimonial/emekafarmer1.png";
 export default function Testimonials() {
   return (
     <section className="w-full">
-      <div className="mx-auto px-4 py-14 sm:px-10">
+      <div className="mx-auto px-4 pt-14 pb-24 sm:px-10">
         <div className="flex flex-col gap-10">
           <div className="flex flex-col items-center gap-4">
             <h3 className="text-[32px] font-black text-[#020202]">
