@@ -1,4 +1,3 @@
-import { useState } from "react";
 import ArrowDown from "@/assets/icons/ArrowDown.svg";
 import ArrowUp from "@/assets/icons/ArrowUp.svg";
 import useActiveIndex from "../hooks/useActiveIndex";
