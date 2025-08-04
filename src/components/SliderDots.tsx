@@ -12,7 +12,7 @@ export default function SliderDots({
         <button
           key={i}
           className={`h-3 w-3 cursor-pointer rounded-full transition-colors duration-300 ${
-            i === activeIndex ? "bg-primary" : "bg-[#E2E2E2]"
+            i + 1 === activeIndex ? "bg-primary" : "bg-[#E2E2E2]"
           }`}
         />
       ))}

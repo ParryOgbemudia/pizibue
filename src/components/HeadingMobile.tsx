@@ -1,6 +1,6 @@
 type HeadingMobileProps = {
   h3: string;
-  span: string;
+  span?: string;
   p: string;
 };
 export default function HeadingMobile({ h3, span, p }: HeadingMobileProps) {
