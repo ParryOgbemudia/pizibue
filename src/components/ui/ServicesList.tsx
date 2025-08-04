@@ -31,25 +31,67 @@ export default function ServicesList() {
   const { activeIndex, toggleItem } = useActiveIndex();
 
   return (
-    <div className="">
-      {services.map((service, index) => (
-        <div key={index} className="flex">
-          <div className="bg-primary w-1/5">
-            <p
-              className={`py-6 pl-4 text-[18px] font-bold text-[#C0E9C7] ${activeIndex === index ? "bg-[#000000CC] text-white" : ""}`}
+    <div
+      className="relative w-full bg-cover bg-top bg-no-repeat"
+      style={{ backgroundImage: "url('/img/services.webp')" }}
+    >
+      <div className="flex h-[calc(100vh-96px)] w-full">
+        {/* Left column (green sidebar) */}
+        <div className="bg-primary flex w-1/5 flex-col">
+          {services.map((service, index) => (
+            <button
+              key={index}
               onClick={() => toggleItem(index)}
+              className={`py-6 pr-2 pl-4 text-left text-[16px] font-semibold transition-colors duration-200 ${
+                activeIndex === index
+                  ? "bg-black/80 text-white"
+                  : "text-[#C0E9C7] hover:bg-black/20"
+              }`}
             >
               {service.title}
+            </button>
+          ))}
+        </div>
+
+        {/* Right content area */}
+        {activeIndex !== null && (
+          <div className="flex-1 bg-black/80 px-10 pt-10 text-white">
+            <h4 className="text-[32px] font-bold">
+              {services[activeIndex].title}
+            </h4>
+            <p className="mt-4 text-[16px] font-normal">
+              {services[activeIndex].text}
             </p>
           </div>
-          {activeIndex === index && (
-            <div className="flex h-full w-4/5 flex-col gap-6 rounded-tr-2xl bg-[#000000CC] px-10 pt-10 text-white">
-              <h4 className="text-[32px] font-bold">{service.title}</h4>
-              <p className="text-[16px] font-normal">{service.text}</p>
-            </div>
-          )}
-        </div>
-      ))}
+        )}
+      </div>
     </div>
   );
 }
+
+// export default function ServicesList() {
+//   const { activeIndex, toggleItem } = useActiveIndex();
+
+//   return (
+//     <div className="">
+//       {services.map((service, index) => (
+//         <div key={index} className="flex">
+//           <div className="bg-primary w-1/5">
+//             <p
+//               className={`py-6 pl-4 text-[18px] font-bold text-[#C0E9C7] ${activeIndex === index ? "bg-[#000000CC] text-white" : ""}`}
+//               onClick={() => toggleItem(index)}
+//             >
+//               {service.title}
+//             </p>
+//           </div>
+//           {activeIndex === index && (
+//             <div className="flex h-[calc(100vh-96px)] w-4/5 flex-col gap-6 rounded-tr-2xl bg-[#000000CC] px-10 pt-10 text-white">
+//               <h4 className="text-[32px] font-bold">{service.title}</h4>
+//               <p className="text-[16px] font-normal">{service.text}</p>
+//             </div>
+//           )}
+//         </div>
+//       ))}
+//     </div>
+//   );
+// }

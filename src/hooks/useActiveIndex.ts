@@ -1,10 +1,10 @@
 import { useState } from "react";
 
 export default function useActiveIndex() {
-  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const [activeIndex, setActiveIndex] = useState<number>(0);
 
   function toggleItem(index: number) {
-    setActiveIndex((prev) => (prev === index ? null : index));
+    if (index !== activeIndex) setActiveIndex(index);
   }
   return { activeIndex, toggleItem };
 }
