@@ -6,7 +6,7 @@ import product_img4 from "@/assets/products/product-img4.webp";
 export default function Products() {
   return (
     <section className="relative w-full">
-      <div className="mx-auto max-w-[1440px]">
+      <div className="mx-auto">
         {/* Product Text */}
         <div className="xmd:mt-[10px] -mb-[50px] flex flex-col items-center gap-4 text-center max-md:mt-[34px]">
           <h1 className="max-w-[483px] text-[40px] leading-tight font-black max-md:w-[343px] max-md:text-[32px]">
@@ -22,9 +22,9 @@ export default function Products() {
         <div className="mt-[-80px] aspect-[1440/657] w-full bg-[url(/img/topshape.svg)] bg-cover bg-center bg-no-repeat max-md:mt-[60px]"></div>
 
         {/* Cards */}
-        <div className="mx-auto max-w-[1440px] bg-[#020202]">
+        <div className="mx-auto bg-[#020202]">
           <div className="max-xmd:-mt-[100px] xmd:-mt-[250px] w-full px-[80px] max-sm:px-4 sm:px-10 md:px-16 lg:px-20">
-            <div className="grid grid-cols-[repeat(auto-fit,_minmax(302px,_1fr))] gap-6">
+            <div className="grid grid-cols-[repeat(2,(1fr_1fr))] gap-6 md:grid-cols-[repeat(auto-fit,_minmax(280px,_1fr))]">
               {[
                 {
                   name: "Sustainable Farming",

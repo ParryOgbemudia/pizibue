@@ -5,7 +5,7 @@ export default function Services() {
     <section className="relative w-full">
       {/* Svg bottom curve */}
 
-      <div className="mx-auto w-full max-w-[1440px] bg-white">
+      <div className="mx-auto w-full bg-white">
         <div className="aspect-[1440/697] bg-[url(/img/bottomshape.svg)] bg-cover bg-center bg-no-repeat"></div>
         <div className="mt-[-100px] mb-10 flex w-full flex-col items-center justify-center gap-4 px-4 font-black">
           <h3 className="text-[32px] text-[#020202]">
