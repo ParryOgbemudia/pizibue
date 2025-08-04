@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ArrowDown from "@/assets/icons/ArrowDown.svg";
 import ArrowUp from "@/assets/icons/ArrowUp.svg";
+import useActiveIndex from "../hooks/useActiveIndex";
 
 const accordionItems = [
   {
@@ -36,11 +37,7 @@ const accordionItems = [
 ];
 
 export default function AccordionList() {
-  const [activeIndex, setActiveIndex] = useState<number | null>(null);
-
-  function toggleItem(index: number) {
-    setActiveIndex((prev) => (prev === index ? null : index));
-  }
+  const { activeIndex, toggleItem } = useActiveIndex();
 
   return (
     <>

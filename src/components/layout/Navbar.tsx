@@ -10,7 +10,7 @@ export default function Navbar() {
   return (
     <header className="fixed top-0 z-50 w-full bg-white">
       <nav
-        className={`relative mx-auto flex h-[100px] items-center justify-between max-md:px-4 max-md:py-4 max-sm:px-4 sm:px-10 md:px-16 lg:px-20`}
+        className={`relative mx-auto flex h-[100px] items-center justify-between max-md:px-4 max-md:py-4 sm:px-10 md:px-16 lg:px-20`}
       >
         <img
           src={logo}
