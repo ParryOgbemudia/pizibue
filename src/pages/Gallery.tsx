@@ -19,7 +19,7 @@ export default function Gallery() {
               alt="Gallery Img1"
               className="rounded-2xl"
             />
-            <SliderDots totalSlides={8} activeIndex={1} />
+            <SliderDots goToSlide={() => 1} totalSlides={8} activeIndex={1} />
           </div>
 
           <Button className="flex w-full items-center gap-2 px-4 py-2.5 text-[14px] md:w-max">
