@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Footer from "../components/layout/Footer";
 import Navbar from "../components/layout/Navbar";
 import About from "../components/sections/About";
@@ -5,17 +6,41 @@ import Hero from "../components/sections/Hero";
 import Products from "../components/sections/Products";
 import Services from "../components/sections/Services";
 import Testimonials from "../components/sections/Testimonials";
+import TrackSection from "../hooks/TrackSection";
 import Gallery from "./Gallery";
 
 export default function Home() {
+  const [activeSection, setActiveSection] = useState("home");
+
   return (
     <div>
-      <Navbar />
+      <Navbar
+        activeSection={activeSection}
+        setActiveSection={setActiveSection}
+      />
+
       <Hero />
+
       <Products />
-      <About />
-      <Services />
-      <Gallery />
+
+      <TrackSection id="about_us" setActiveSection={setActiveSection}>
+        <section id="about_us">
+          <About />
+        </section>
+      </TrackSection>
+
+      <TrackSection id="services" setActiveSection={setActiveSection}>
+        <section id="services">
+          <Services />
+        </section>
+      </TrackSection>
+
+      <TrackSection id="gallery" setActiveSection={setActiveSection}>
+        <section id="gallery">
+          <Gallery />
+        </section>
+      </TrackSection>
+
       <Testimonials />
       <Footer />
     </div>

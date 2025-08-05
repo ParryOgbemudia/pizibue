@@ -5,7 +5,7 @@ import ServicesList from "../ui/ServicesList";
 export default function Services() {
   const isAboveMediumScreens = useMediaQuery("(max-width: 770px)");
   return (
-    <section className="relative w-full">
+    <section className="relative w-full" id="services">
       {/* Svg bottom curve */}
 
       <div className="mx-auto w-full bg-white">

@@ -3,7 +3,7 @@ import about_img from "@/assets/about/about_img.webp";
 
 export default function About() {
   return (
-    <section className="w-full" id="about">
+    <section className="w-full" id="about_us">
       <div className="mx-auto bg-[#020202] px-[80px] py-[96px] max-sm:px-4 sm:px-10 md:px-16 lg:px-20">
         <div className="flex w-full gap-16 max-md:flex-col">
           <div className="flex w-full flex-col items-center gap-8">

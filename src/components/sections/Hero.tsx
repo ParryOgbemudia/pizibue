@@ -2,7 +2,7 @@ import Button from "../ui/Button";
 
 export default function Hero() {
   return (
-    <main className="mx-auto max-md:pt-[64px] md:pt-[80px]">
+    <main className="mx-auto max-md:pt-[64px] md:pt-[80px]" id="home">
       {/* ✅ Hero section */}
       <section className="pt-6 max-md:h-[545px] max-md:pt-0 max-md:pb-8 max-sm:px-4 sm:px-10 md:mb-24 md:px-16 lg:px-20">
         <div className="relative mx-auto w-full overflow-hidden rounded-[24px] bg-[url(/img/hero2.webp)] bg-cover bg-center max-md:h-full max-md:px-4 max-md:py-8 md:h-[600px]">

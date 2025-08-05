@@ -37,7 +37,7 @@ export default function ServicesList() {
     >
       <div className="flex h-[calc(100vh-96px)] w-full">
         {/* Left column (green sidebar) */}
-        <div className="bg-primary flex w-1/5 flex-col">
+        <div className="bg-primary flex flex-col">
           {services.map((service, index) => (
             <button
               key={index}

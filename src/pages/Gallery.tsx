@@ -5,7 +5,7 @@ import SliderDots from "../components/SliderDots";
 
 export default function Gallery() {
   return (
-    <section className="w-full">
+    <section className="w-full" id="gallery">
       <div className="mx-auto px-4 py-14 sm:px-10">
         <div className="flex flex-col items-center justify-center gap-10">
           <HeadingMobile
