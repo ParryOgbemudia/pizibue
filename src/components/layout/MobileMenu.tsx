@@ -29,10 +29,10 @@ export default function MobileMenu({
                   setActiveSection(navItem);
                   onClose(); // close menu after clicking
                 }}
-                className={`py-4 transition-colors ${
+                className={`py-4 transition-colors duration-300 ${
                   activeSection === navItem
-                    ? "text-primary font-bold"
-                    : "text-gray-700"
+                    ? "text-primary font-black"
+                    : "text-[12px] font-medium text-[#000000]"
                 } hover:text-primary`}
               >
                 {navItem
