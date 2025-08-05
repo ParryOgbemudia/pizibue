@@ -1,10 +1,9 @@
-import { ReactNode } from "react";
 import useSectionInView from "../hooks/useSectionInView";
 
 type Props = {
   id: string;
   setActiveSection: (id: string) => void;
-  children: ReactNode;
+  children: React.ReactNode;
 };
 
 export default function TrackSection({
