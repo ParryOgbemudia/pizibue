@@ -84,7 +84,9 @@
 
 //   return (
 //     <div className="w-full">
-//       <div className=""></div>
+//       <div className="flex w-full gap-14">
+//         <div className="px max-w-[946px] rounded-2xl bg-[#020202] px-16 py-24"></div>
+//       </div>
 //     </div>
 //   );
 // }

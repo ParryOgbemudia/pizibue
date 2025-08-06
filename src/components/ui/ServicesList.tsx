@@ -37,25 +37,27 @@ export default function ServicesList() {
     >
       <div className="flex h-[calc(100vh-96px)] w-full">
         {/* Left column (green sidebar) */}
-        <div className="bg-primary flex flex-col">
-          {services.map((service, index) => (
-            <button
-              key={index}
-              onClick={() => toggleItem(index)}
-              className={`py-6 pr-2 pl-4 text-left text-[16px] font-semibold transition-colors duration-200 ${
-                activeIndex === index
-                  ? "bg-black/80 text-white"
-                  : "text-[#C0E9C7] hover:bg-black/20"
-              }`}
-            >
-              {service.title}
-            </button>
-          ))}
+        <div className="self-start overflow-hidden rounded-tl-2xl rounded-bl-2xl">
+          <div className="flex min-w-[217px] flex-col">
+            {services.map((service, index) => (
+              <button
+                key={index}
+                onClick={() => toggleItem(index)}
+                className={`py-6 pr-2 pl-4 text-left text-[16px] font-semibold transition-colors duration-200 ${
+                  activeIndex === index
+                    ? "bg-black/80 text-white"
+                    : "bg-primary text-[#C0E9C7] hover:bg-black/20"
+                }`}
+              >
+                {service.title}
+              </button>
+            ))}
+          </div>
         </div>
 
         {/* Right content area */}
         {activeIndex !== null && (
-          <div className="flex-1 bg-black/80 px-10 pt-10 text-white">
+          <div className="flex-1 rounded-tr-2xl bg-black/80 px-10 pt-10 text-white">
             <h4 className="text-[32px] font-bold">
               {services[activeIndex].title}
             </h4>

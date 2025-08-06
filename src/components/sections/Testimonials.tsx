@@ -1,4 +1,4 @@
-import TestimonialSlides from "./TestimonialSlides";
+// import TestimonialSlides from "./TestimonialSlides";
 
 export default function Testimonials() {
   return (
@@ -16,7 +16,7 @@ export default function Testimonials() {
           </div>
 
           {/* TESTIMONIAL SLIDER */}
-          <TestimonialSlides />
+          {/* <TestimonialSlides /> */}
         </div>
       </div>
     </section>
