@@ -19,7 +19,7 @@ export default function Products() {
           </p>
         </div>
         {/* Curve svg */}
-        <div className="mt-[-80px] aspect-[1440/657] w-full bg-[url(/img/topshape.svg)] bg-cover bg-center bg-no-repeat max-md:mt-[60px]"></div>
+        <div className="mt-[-80px] aspect-[1440/657] w-full bg-[url(/img/topshape.svg)] bg-cover bg-no-repeat max-md:mt-[60px]"></div>
 
         {/* Cards */}
         <div className="mx-auto bg-[#020202]">

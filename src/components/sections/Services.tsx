@@ -10,7 +10,7 @@ export default function Services() {
 
       <div className="mx-auto w-full bg-white">
         <div className="aspect-[1440/697] bg-[url(/img/bottomshape.svg)] bg-cover bg-center bg-no-repeat"></div>
-        <div className="xmd:mt-[-280px] mx-auto mt-[-100px] mb-10 flex w-full flex-col items-center justify-center gap-4 px-4 font-black sm:mt-[-150px] md:mt-[-200px] md:w-2/5 lg:mt-[-350px] xl:mt-[-450px] 2xl:mt-[-500px]">
+        <div className="xmd:mt-[-280px] mx-auto mt-[-100px] mb-10 flex w-full flex-col items-center justify-center gap-4 px-4 font-black max-sm:pt-10 sm:mt-[-150px] md:mt-[-200px] md:w-2/5 lg:mt-[-350px] xl:mt-[-450px] 2xl:mt-[-500px]">
           <h3 className="text-[32px] text-[#020202]">
             Our Core
             <span className="text-primary"> Services</span>
