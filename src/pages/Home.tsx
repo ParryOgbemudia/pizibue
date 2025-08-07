@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import Footer from "../components/layout/Footer";
 import About from "../components/sections/About";
 import Hero from "../components/sections/Hero";
-import Products from "../components/sections/Products";
+import Products from "../components/product/Products";
 import Services from "../components/services/Services";
 import Testimonials from "../components/testimonials/Testimonials";
 import TrackSection from "../hooks/TrackSection";
