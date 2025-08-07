@@ -6,6 +6,7 @@ type Props = {
   activeSection: string;
   setActiveSection: (value: string) => void;
   onClose: () => void;
+  isMobileMenuOpen: boolean;
 };
 
 const navItems = ["about_us", "services", "gallery", "contact_us"];
