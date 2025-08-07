@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Button from "../../ui/Button";
 import React from "react";
 
@@ -15,8 +15,6 @@ export default function MobileMenu({
   setActiveSection,
   onClose,
 }: Props) {
-  const location = useLocation();
-
   return (
     <div className="xmd:hidden fixed top-[100px] left-0 z-40 flex h-[calc(100vh-100px)] w-full flex-col justify-between bg-white px-6 pt-4 pb-[64.37px] text-xs font-medium text-[#000000] max-md:px-4 sm:px-10 md:px-16">
       <ul className="flex h-full flex-col gap-4">
