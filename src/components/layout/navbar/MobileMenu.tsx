@@ -6,7 +6,6 @@ type Props = {
   activeSection: string;
   setActiveSection: (value: string) => void;
   onClose: () => void;
-  isMobileMenuOpen: boolean;
 };
 
 const navItems = ["about_us", "services", "gallery", "contact_us"];
@@ -26,12 +25,7 @@ export default function MobileMenu({
             .replace(/^\w/, (c) => c.toUpperCase());
 
           const isContact = navItem === "contact_us";
-          const linkTo = isContact
-            ? "/contact"
-            : {
-                pathname: "/",
-                hash: `#${navItem}`,
-              };
+          const linkTo = isContact ? "/contact" : `/#${navItem}`;
 
           return (
             <React.Fragment key={index}>

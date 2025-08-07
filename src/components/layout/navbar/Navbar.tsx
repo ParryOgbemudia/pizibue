@@ -41,7 +41,6 @@ export default function Navbar({ activeSection, setActiveSection }: NavProps) {
         </div>
         {isMobileMenuOpen && (
           <MobileMenu
-            isMobileMenuOpen={isMobileMenuOpen}
             activeSection={activeSection}
             setActiveSection={setActiveSection}
             onClose={() => setIsMobileMenuOpen(false)}
