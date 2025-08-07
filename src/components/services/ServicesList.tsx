@@ -70,30 +70,3 @@ export default function ServicesList() {
     </div>
   );
 }
-
-// export default function ServicesList() {
-//   const { activeIndex, toggleItem } = useActiveIndex();
-
-//   return (
-//     <div className="">
-//       {services.map((service, index) => (
-//         <div key={index} className="flex">
-//           <div className="bg-primary w-1/5">
-//             <p
-//               className={`py-6 pl-4 text-[18px] font-bold text-[#C0E9C7] ${activeIndex === index ? "bg-[#000000CC] text-white" : ""}`}
-//               onClick={() => toggleItem(index)}
-//             >
-//               {service.title}
-//             </p>
-//           </div>
-//           {activeIndex === index && (
-//             <div className="flex h-[calc(100vh-96px)] w-4/5 flex-col gap-6 rounded-tr-2xl bg-[#000000CC] px-10 pt-10 text-white">
-//               <h4 className="text-[32px] font-bold">{service.title}</h4>
-//               <p className="text-[16px] font-normal">{service.text}</p>
-//             </div>
-//           )}
-//         </div>
-//       ))}
-//     </div>
-//   );
-// }

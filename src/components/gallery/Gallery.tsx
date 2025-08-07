@@ -1,7 +1,7 @@
-import HeadingMobile from "../components/HeadingMobile";
+import HeadingMobile from "../layout/navbar/HeadingMobile";
 import gallery_img1 from "@/assets/gallery/gallery_img1.webp";
-import Button from "../components/ui/Button";
-import SliderDots from "../components/SliderDots";
+import Button from "../ui/Button";
+import SliderDots from "../ui/SliderDots";
 
 export default function Gallery() {
   return (
@@ -17,7 +17,7 @@ export default function Gallery() {
             <img
               src={gallery_img1}
               alt="Gallery Img1"
-              className="rounded-2xl"
+              className="relative aspect-[1440/657] rounded-2xl"
             />
             <SliderDots goToSlide={() => 1} totalSlides={8} activeIndex={1} />
           </div>

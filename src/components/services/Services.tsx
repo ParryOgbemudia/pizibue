@@ -1,6 +1,6 @@
 import useMediaQuery from "../../hooks/useMediaQuery";
-import AccordionList from "../AccordionList";
-import ServicesList from "../ui/ServicesList";
+import AccordionList from "./AccordionList";
+import ServicesList from "./ServicesList";
 
 export default function Services() {
   const isAboveMediumScreens = useMediaQuery("(max-width: 770px)");

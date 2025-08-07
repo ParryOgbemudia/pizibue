@@ -8,6 +8,7 @@ import MobileMenu from "./MobileMenu";
 type NavProps = {
   activeSection: string;
   setActiveSection: (value: string) => void;
+  isHome?: boolean;
 };
 
 export default function Navbar({ activeSection, setActiveSection }: NavProps) {

@@ -1,26 +1,44 @@
-import { useState } from "react";
+import { useEffect } from "react";
+import { useLocation, useNavigate } from "react-router-dom";
 import Footer from "../components/layout/Footer";
-import Navbar from "../components/layout/Navbar";
 import About from "../components/sections/About";
 import Hero from "../components/sections/Hero";
 import Products from "../components/sections/Products";
-import Services from "../components/sections/Services";
-import Testimonials from "../components/sections/Testimonials";
+import Services from "../components/services/Services";
+import Testimonials from "../components/testimonials/Testimonials";
 import TrackSection from "../hooks/TrackSection";
-import Gallery from "./Gallery";
+import Gallery from "../components/gallery/Gallery";
+
+import { useSectionContext } from "../context/SectionProvider";
 
 export default function Home() {
-  const [activeSection, setActiveSection] = useState("home");
+  const { setActiveSection } = useSectionContext();
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    const scrollTo = location.state?.scrollTo;
+
+    if (scrollTo) {
+      const waitForElement = () => {
+        const el = document.getElementById(scrollTo);
+        if (el) {
+          el.scrollIntoView({ behavior: "smooth" });
+          // Update state to remove scrollTo
+          navigate(location.pathname, { replace: true, state: {} });
+        } else {
+          // Try again until element exists (max 10 attempts)
+          requestAnimationFrame(waitForElement);
+        }
+      };
+
+      waitForElement();
+    }
+  }, [location, navigate]);
 
   return (
     <div>
-      <Navbar
-        activeSection={activeSection}
-        setActiveSection={setActiveSection}
-      />
-
       <Hero />
-
       <Products />
 
       <TrackSection id="about_us" setActiveSection={setActiveSection}>
@@ -46,5 +64,3 @@ export default function Home() {
     </div>
   );
 }
-
-//  <div className=" w-full bg-[#020202] px-[80px] max-md:mt-[-120px] max-md:px-4 max-sm:top-[300px] max-sm:pt-10 max-sm:pb-[56px] md:mt-[-260px]"></div>
