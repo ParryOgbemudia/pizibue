@@ -23,8 +23,8 @@ export default function Products() {
 
         {/* Cards */}
         <div className="mx-auto bg-[#020202]">
-          <div className="max-xmd:-mt-[100px] xmd:-mt-[250px] w-full px-[80px] max-sm:px-4 sm:px-10 md:px-16 lg:px-20">
-            <div className="grid grid-cols-[repeat(2,(1fr_1fr))] gap-6 md:grid-cols-[repeat(auto-fit,_minmax(280px,_1fr))]">
+          <div className="max-xmd:-mt-[100px] xmd:-mt-[250px] w-full px-[80px] max-sm:px-4 max-sm:pt-[40px] sm:px-10 md:px-16 lg:px-20">
+            <div className="grid grid-cols-[repeat(2,(1fr_1fr))] gap-6 md:grid-cols-[repeat(auto-fit,_minmax(28\50px,_1fr))]">
               {[
                 {
                   name: "Sustainable Farming",

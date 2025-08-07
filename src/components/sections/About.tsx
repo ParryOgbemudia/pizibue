@@ -6,7 +6,7 @@ export default function About() {
     <section className="w-full" id="about_us">
       <div className="mx-auto bg-[#020202] px-[80px] py-[96px] max-sm:px-4 sm:px-10 md:px-16 lg:px-20">
         <div className="flex w-full gap-16 max-md:flex-col">
-          <div className="flex w-full flex-col items-center gap-8">
+          <div className="flex w-full flex-col items-center gap-8 max-sm:mt-[40px]">
             <div className="flex flex-col gap-10">
               <div className="space-y-6">
                 <h2 className="text-[40px] font-black text-white max-md:text-[32px]">
